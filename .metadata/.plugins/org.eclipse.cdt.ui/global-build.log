@@ -1,0 +1,28 @@
+23:45:40 **** Incremental Build of configuration Debug for project sindicato ****
+make all 
+Building file: ../sockets/socket_servidor.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"sockets/socket_servidor.d" -MT"sockets/socket_servidor.o" -o "sockets/socket_servidor.o" "../sockets/socket_servidor.c"
+../sockets/socket_servidor.c: In function ‘iniciar_servidor’:
+../sockets/socket_servidor.c:19:35: warning: implicit declaration of function ‘inet_addr’ [-Wimplicit-function-declaration]
+     dirServidor.sin_addr.s_addr = inet_addr(ip);
+                                   ^
+../sockets/socket_servidor.c: In function ‘recibir_conexion’:
+../sockets/socket_servidor.c:58:67: warning: pointer targets in passing argument 3 of ‘accept’ differ in signedness [-Wpointer-sign]
+  int socket_cliente = accept(socket_servidor, (void*)&dirCliente, &tam_direccion);
+                                                                   ^
+In file included from ../sockets/socket_servidor.h:15:0,
+                 from ../sockets/socket_servidor.c:8:
+/usr/include/i386-linux-gnu/sys/socket.h:243:12: note: expected ‘socklen_t * restrict {aka unsigned int * restrict}’ but argument is of type ‘int *’
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^
+Finished building: ../sockets/socket_servidor.c
+ 
+Building target: sindicato
+Invoking: GCC C Linker
+gcc  -o "sindicato"  ./sockets/socket_cliente.o ./sockets/socket_servidor.o  ./servidor_sindicato.o   -lcommons
+Finished building target: sindicato
+ 
+23:45:50 **** Incremental Build of configuration Debug for project sindicato ****
+make all 
+make: Nothing to be done for 'all'.

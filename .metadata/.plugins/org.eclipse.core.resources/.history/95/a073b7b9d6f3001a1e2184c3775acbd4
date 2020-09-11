@@ -1,0 +1,28 @@
+/*
+ * servidor_sindicato.c
+ *
+ *  Created on: 7 sep. 2020
+ *      Author: utnso
+ */
+
+#include "servidor_sindicato.h"
+
+int main(void){
+
+	t_config* configSindicato = leer_config();
+	int socket_sindicato = iniciar_servidor(configSindicato);
+
+	t_log* slog = log_create("sindicato.log", "Sindicato", 1, LOG_LEVEL_INFO);
+	log_info(slog, "Ya estoy escuchando");
+	// printf("Ya estoy escuchando"); //Esto debería estar logeado
+
+	int socket_modulo_entrante = recibir_conexion(socket_sindicato);
+
+	//Armar while de recibo de datos
+
+	printf("Servidor inicializado con éxito:");
+}
+
+t_config* leer_config(void){
+	return config_create("sindicato.config");
+}
