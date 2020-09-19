@@ -1,8 +1,10 @@
-[INFO] 23:30:34:248 Sindicato/(6681:6681): Ya estoy escuchando
-[INFO] 23:33:20:361 Sindicato/(6814:6814): Ya estoy escuchando
-[INFO] 23:34:14:565 Sindicato/(6872:6872): Ya estoy escuchando
-[INFO] 23:38:36:931 Sindicato/(6968:6968): Ya estoy escuchando
-[INFO] 23:39:34:163 Sindicato/(7014:7014): Ya estoy escuchando
-[INFO] 23:40:40:52 Sindicato/(7070:7070): Ya estoy escuchando
-[INFO] 23:41:32:979 Sindicato/(7126:7126): Ya estoy escuchando
-[INFO] 23:45:53:420 Sindicato/(7220:7220): Ya estoy escuchando
+[TRACE] 18:26:55:495 sindicato.log/(8683:8683): SERVIDOR: Esperando conexión.
+[ERROR] 18:26:55:496 sindicato.log/(8683:8683): No se pudo establecer conexión con servidor
+[TRACE] 18:30:24:175 sindicato.log/(8794:8794): SERVIDOR: Esperando conexión.
+[ERROR] 18:30:24:178 sindicato.log/(8794:8794): No se pudo establecer conexión con servidor
+[TRACE] 18:32:42:294 sindicato.log/(8897:8897): SERVIDOR: Esperando conexión.
+[ERROR] 18:32:42:302 sindicato.log/(8897:8897): No se pudo establecer conexión con servidor
+[TRACE] 18:36:11:188 sindicato.log/(8974:8974): SERVIDOR: Esperando conexión.
+[TRACE] 18:36:33:682 sindicato.log/(9004:9004): SERVIDOR: Esperando conexión.
+[TRACE] 18:41:20:45 sindicato.log/(9242:9242): SERVIDOR: Esperando conexión.
+[ERROR] 18:41:20:56 sindicato.log/(9242:9242): No se pudo establecer conexión con servidor

@@ -1,6 +1,7 @@
-23:45:50 **** Incremental Build of configuration Debug for project sindicato ****
-make all 
-make: Nothing to be done for 'all'.
+19:02:06 **** Clean-only build of configuration Debug for project sindicato ****
+make clean 
+rm -rf  ./sockets/socket_cliente.o ./sockets/socket_servidor.o  ./sindicato.o ./utils.o  ./sockets/socket_cliente.d ./sockets/socket_servidor.d  ./sindicato.d ./utils.d  sindicato
+ 
 
-23:45:51 Build Finished (took 1s.146ms)
+19:02:07 Build Finished (took 777ms)
 

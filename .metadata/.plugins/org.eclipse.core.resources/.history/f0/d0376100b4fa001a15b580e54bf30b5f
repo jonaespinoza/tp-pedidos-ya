@@ -1,0 +1,30 @@
+/*
+ * sindicato.c
+ *
+ *  Created on: 19 sep. 2020
+ *      Author: utnso
+ */
+
+
+int main(void){
+
+	t_log* logCliente = leer_log();
+
+	t_config* configCliente = config_create("sindicato.config");
+
+	//Conectarse a Servidor
+	if (crear_conexion(config_get_string_value(configCliente, "IP"),config_get_int_value(configCliente, "PUERTO_ESCUCHA"))==-1){
+							log_error(logCliente, "No se pudo establecer conexión con Sindicato");
+	} else {
+	int conexion_sindicato = crear_conexion(
+								config_get_string_value(configCliente, "IP"),
+								config_get_int_value(configCliente, "PUERTO_ESCUCHA")
+							);
+	log_trace(logCliente, "Se estableció conexión con Sindicato");
+	}
+
+}
+
+t_log* leer_log(void){
+	return log_create("sindicato.log","sindicato.log",1,LOG_LEVEL_INFO);
+}

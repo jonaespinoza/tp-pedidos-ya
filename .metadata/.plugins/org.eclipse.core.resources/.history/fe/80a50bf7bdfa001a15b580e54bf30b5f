@@ -1,0 +1,13 @@
+[TRACE] 16:51:38:632 servidor_sindicato.log/(5507:5507): Ya estoy escuchando.
+[TRACE] 16:51:38:634 servidor_sindicato.log/(5507:5507): Esperando conexión.
+[TRACE] 17:20:51:696 servidor_sindicato.log/(6596:6596): SERVIDOR: Esperando conexión.
+[TRACE] 17:27:57:513 servidor_sindicato.log/(6723:6723): SERVIDOR: Esperando conexión.
+[TRACE] 17:59:23:332 servidor_sindicato.log/(7597:7597): SERVIDOR: Esperando conexión.
+[ERROR] 17:59:23:334 servidor_sindicato.log/(7597:7597): No se pudo establecer conexión con Sindicato
+[TRACE] 18:01:58:699 servidor_sindicato.log/(7669:7669): SERVIDOR: Esperando conexión.
+[TRACE] 18:03:18:667 servidor_sindicato.log/(7729:7729): SERVIDOR: Esperando conexión.
+[TRACE] 18:05:01:18 servidor_sindicato.log/(7808:7808): SERVIDOR: Esperando conexión.
+[TRACE] 18:09:00:18 servidor_sindicato.log/(8020:8020): SERVIDOR: Esperando conexión.
+[TRACE] 18:12:46:713 servidor_sindicato.log/(8236:8236): SERVIDOR: Esperando conexión.
+[TRACE] 18:19:36:833 servidor_sindicato.log/(8465:8465): SERVIDOR: Esperando conexión.
+[ERROR] 18:19:36:888 servidor_sindicato.log/(8465:8465): No se pudo establecer conexión con servidor

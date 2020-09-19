@@ -1,6 +1,7 @@
-22:07:20 **** Incremental Build of configuration Debug for project cliente ****
-make all 
-make: Nothing to be done for 'all'.
+19:02:11 **** Clean-only build of configuration Debug for project cliente ****
+make clean 
+rm -rf  ./sockets/socket_cliente.o ./sockets/socket_servidor.o  ./cliente.o  ./sockets/socket_cliente.d ./sockets/socket_servidor.d  ./cliente.d  cliente
+ 
 
-22:07:21 Build Finished (took 524ms)
+19:02:12 Build Finished (took 519ms)
 
