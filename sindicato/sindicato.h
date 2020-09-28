@@ -16,6 +16,12 @@
 #include<readline/readline.h>
 #include"sockets/socket_cliente.h"
 #include"sockets/socket_servidor.h"
+#include<pthread.h>
+#include<semaphore.h>
+
+pthread_t h1,h2;
+sem_t sem1;
+void servidor_sindicato(void);
 
 
 #endif /* SINDICATO_H_ */

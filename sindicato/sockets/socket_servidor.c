@@ -7,7 +7,7 @@
 
 #include "socket_servidor.h"
 
-int iniciar_servidor(t_config* config){
+int iniciar_servidor(t_config* config, t_log* logger){
 	struct sockaddr_in dirServidor;
 
 	int socket_servidor;
@@ -23,36 +23,59 @@ int iniciar_servidor(t_config* config){
     int yes = 1;
 
     if ((socket_servidor = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
-    	perror("Error de servidor.");
-    	exit(1);
+    	log_error(logger,"SERVIDOR: No se pudo crear socket.");
+
+    	free(socket_servidor);
+
+    	exit(EXIT_FAILURE);
     }
 
-    setsockopt(socket_servidor,SOL_SOCKET,SO_REUSEADDR,&yes,sizeof(int));
+    log_debug(logger, "SERVIDOR: Socket creado con éxito.");
+
+    if (setsockopt(socket_servidor,SOL_SOCKET,SO_REUSEADDR,&yes,sizeof(int)) == -1){
+    	log_error(logger, "SERVIDOR: Error setcokopt.");
+
+    	free(socket_servidor);
+
+    	exit(EXIT_FAILURE);
+
+    }
 
     if (bind(socket_servidor, (void *)&dirServidor, sizeof(dirServidor)) != 0){
-    	perror("Bind Error");
-    	exit(1);
+    	log_error(logger, "SERVIDOR: Error bind.");
+
+    	free(socket_servidor);
+
+    	exit(EXIT_FAILURE);
+
     }
 
     if (listen(socket_servidor, SOMAXCONN) == -1) {
-    	perror("Listen Error.");
-    	exit(1);
+    	log_error(logger, "SERVIDOR: Error listen.");
+
+    	free(socket_servidor);
+
+    	exit(EXIT_FAILURE);
+
     }
 
+    log_debug(logger, "SERVIDOR: Servidor inicializado con éxito.");
 
     return socket_servidor;
 }
 
-int recibir_conexion(int socket_servidor){
+int recibir_conexion(int socket_servidor, t_log* logger){
 
 	struct sockaddr_in dirCliente;
 
 	int tam_direccion = sizeof(struct sockaddr_in);
 
-	int socket_cliente = accept(socket_servidor, (void*)&dirCliente, &tam_direccion);
+	log_debug(logger, "SERVIDOR: Intentando establecer conexion.");
 
-	for(;;);
+	int sock_cliente = accept(socket_servidor, (void*) &dirCliente, tam_direccion);
 
-	return socket_cliente;
+	log_debug(logger, "SERVIDOR: Se recibió conexión de: ");
+
+	return sock_cliente;
 
 }

@@ -4,16 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../sindicato.c \
-../utils.c 
+../servidor_sindicato.c \
+../sindicato.c 
 
 OBJS += \
-./sindicato.o \
-./utils.o 
+./servidor_sindicato.o \
+./sindicato.o 
 
 C_DEPS += \
-./sindicato.d \
-./utils.d 
+./servidor_sindicato.d \
+./sindicato.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

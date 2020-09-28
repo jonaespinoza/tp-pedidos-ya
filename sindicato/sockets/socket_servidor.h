@@ -19,7 +19,8 @@
 #include<commons/log.h>
 
 t_config* config;
-int iniciar_servidor(t_config*);
+t_log* log;
+int iniciar_servidor(t_config*, t_log*);
 int recibir_cliente(int socket_servidor);
 
 #endif /* SOCKETS_SOCKET_SERVIDOR_H_ */

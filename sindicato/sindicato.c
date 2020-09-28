@@ -6,29 +6,23 @@
  */
 
 #include"sindicato.h"
-
-#include "utils.h"
+#include"servidor_sindicato.h"
 
 int main(void){
+
+	pthread_create(&h1,NULL,*servidor_sindicato,NULL);
+	pthread_join(h1,NULL);
 
 	t_log* logSindicato = leer_log();
 
 	t_config* configSindicato = config_create("sindicato.config");
 
-	int socket_sindicato = iniciar_servidor(configSindicato);
-
-	log_trace(logSindicato, "SERVIDOR: Esperando conexión.");
-
 	char *ip_server = config_get_string_value(configSindicato, "IP");
 	int puerto_server = config_get_int_value(configSindicato, "PUERTO_ESCUCHA");
 
-	//Conectarse a Servidor
-	if (crear_conexion(ip_server,puerto_server)==-1){
-		log_error(logSindicato, "No se pudo establecer conexión con servidor");
-	} else {
-		int conexion_sindicato = crear_conexion(ip_server,puerto_server);
-		log_trace(logSindicato, "Se estableció conexión con servidor");
-	}
+	int conexion = crear_conexion(ip_server,puerto_server,logSindicato);
+
+	return 0;
 
 }
 

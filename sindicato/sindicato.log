@@ -8,3 +8,80 @@
 [TRACE] 18:36:33:682 sindicato.log/(9004:9004): SERVIDOR: Esperando conexión.
 [TRACE] 18:41:20:45 sindicato.log/(9242:9242): SERVIDOR: Esperando conexión.
 [ERROR] 18:41:20:56 sindicato.log/(9242:9242): No se pudo establecer conexión con servidor
+[TRACE] 20:44:28:804 sindicato.log/(4202:4202): SERVIDOR: Esperando conexión.
+[ERROR] 20:44:28:816 sindicato.log/(4202:4202): No se pudo establecer conexión con servidor
+[TRACE] 20:45:14:32 sindicato.log/(4230:4230): SERVIDOR: Esperando conexión.
+[TRACE] 20:54:18:355 sindicato.log/(4699:4699): SERVIDOR: Esperando conexión.
+[ERROR] 20:54:18:358 sindicato.log/(4699:4699): No se pudo establecer conexión con servidor
+[TRACE] 18:09:12:665 sindicato.log/(4557:4557): SERVIDOR: Inicializado con éxito.
+[TRACE] 18:15:22:505 sindicato.log/(4968:4968): SERVIDOR: Inicializado con éxito.
+[DEBUG] 21:09:32:471 sindicato.log/(5744:5744): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:09:32:485 sindicato.log/(5744:5744): SERVIDOR: Servidor inicializado con éxito.
+[TRACE] 21:09:32:485 sindicato.log/(5744:5744): SERVIDOR: Inicializado con éxito.
+[ERROR] 21:09:32:485 sindicato.log/(5744:5744): No se pudo establecer conexión con servidor
+[DEBUG] 21:10:46:575 sindicato.log/(5850:5850): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:10:46:580 sindicato.log/(5850:5850): SERVIDOR: Servidor inicializado con éxito.
+[ERROR] 21:10:46:580 sindicato.log/(5850:5850): No se pudo establecer conexión con servidor
+[DEBUG] 21:37:40:136 sindicato.log/(6469:6469): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:37:40:141 sindicato.log/(6469:6469): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 21:38:01:855 sindicato.log/(6488:6488): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:38:01:856 sindicato.log/(6488:6488): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 21:38:23:646 sindicato.log/(6516:6516): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:38:23:647 sindicato.log/(6516:6516): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 21:38:59:584 sindicato.log/(6590:6590): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:38:59:584 sindicato.log/(6590:6590): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:38:41:870 sindicato.log/(4816:4821): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:38:41:870 sindicato.log/(4816:4821): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:35:24:291 sindicato.log/(4111:4120): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:35:24:294 sindicato.log/(4111:4120): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:36:20:215 sindicato.log/(4154:4165): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:36:20:215 sindicato.log/(4154:4165): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:36:56:645 sindicato.log/(4211:4223): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:36:56:645 sindicato.log/(4211:4223): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:37:21:874 sindicato.log/(4245:4258): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:37:21:874 sindicato.log/(4245:4258): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:43:16:957 sindicato.log/(4442:4448): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:43:16:957 sindicato.log/(4442:4448): SERVIDOR: Servidor inicializado con éxito.
+[ERROR] 20:43:59:801 sindicato.log/(4495:4495): SERVIDOR: No se pudo crear socket.
+[ERROR] 20:45:01:6 sindicato.log/(4567:4567): No se pudo crear conexion.
+[DEBUG] 20:46:46:519 sindicato.log/(4658:4664): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:46:46:519 sindicato.log/(4658:4664): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:48:29:984 sindicato.log/(4747:4752): SERVIDOR: Socket creado con éxito.
+[ERROR] 20:48:29:984 sindicato.log/(4747:4752): SERVIDOR: Error bind.
+[DEBUG] 20:49:05:643 sindicato.log/(4793:4798): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:49:05:643 sindicato.log/(4793:4798): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:49:56:46 sindicato.log/(4866:4874): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:49:56:47 sindicato.log/(4866:4874): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:49:56:47 sindicato.log/(4866:4874): Intentando establecer conexion.
+[DEBUG] 20:50:42:903 sindicato.log/(4934:4941): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:50:42:903 sindicato.log/(4934:4941): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:50:42:903 sindicato.log/(4934:4941): SERVIDOR: Intentando establecer conexion.
+[DEBUG] 20:52:55:307 sindicato.log/(5030:5036): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:52:55:311 sindicato.log/(5030:5036): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:52:55:311 sindicato.log/(5030:5036): SERVIDOR: Intentando establecer conexion.
+[DEBUG] 20:57:17:641 sindicato.log/(5199:5205): SERVIDOR: Socket creado con éxito.
+[ERROR] 20:57:17:647 sindicato.log/(5199:5205): SERVIDOR: Error bind.
+[DEBUG] 20:57:27:616 sindicato.log/(5218:5224): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:57:27:617 sindicato.log/(5218:5224): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:57:27:617 sindicato.log/(5218:5224): SERVIDOR: Intentando establecer conexion.
+[DEBUG] 20:58:18:958 sindicato.log/(5269:5275): SERVIDOR: Socket creado con éxito.
+[ERROR] 20:58:18:958 sindicato.log/(5269:5275): SERVIDOR: Error bind.
+[DEBUG] 20:58:23:722 sindicato.log/(5287:5293): SERVIDOR: Socket creado con éxito.
+[DEBUG] 20:58:23:725 sindicato.log/(5287:5293): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 20:58:23:725 sindicato.log/(5287:5293): SERVIDOR: Intentando establecer conexion.
+[DEBUG] 20:59:49:415 sindicato.log/(5359:5373): SERVIDOR: Socket creado con éxito.
+[ERROR] 20:59:49:415 sindicato.log/(5359:5373): SERVIDOR: Error bind.
+[DEBUG] 21:00:05:676 sindicato.log/(5408:5417): SERVIDOR: Socket creado con éxito.
+[ERROR] 21:00:05:676 sindicato.log/(5408:5417): SERVIDOR: Error bind.
+[DEBUG] 21:00:27:821 sindicato.log/(5440:5449): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:00:27:821 sindicato.log/(5440:5449): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 21:00:27:821 sindicato.log/(5440:5449): SERVIDOR: Intentando establecer conexion.
+[DEBUG] 21:00:45:974 sindicato.log/(5459:5465): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:00:45:974 sindicato.log/(5459:5465): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 21:00:45:974 sindicato.log/(5459:5465): SERVIDOR: Intentando establecer conexion.
+[DEBUG] 21:00:57:633 sindicato.log/(5484:5492): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:00:57:633 sindicato.log/(5484:5492): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 21:00:57:633 sindicato.log/(5484:5492): SERVIDOR: Intentando establecer conexion.
+[DEBUG] 21:12:08:483 sindicato.log/(5956:5962): SERVIDOR: Socket creado con éxito.
+[DEBUG] 21:12:08:487 sindicato.log/(5956:5962): SERVIDOR: Servidor inicializado con éxito.
+[DEBUG] 21:12:08:490 sindicato.log/(5956:5962): SERVIDOR: Intentando establecer conexion.

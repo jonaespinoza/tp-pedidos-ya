@@ -15,7 +15,9 @@
 #include<sys/socket.h>
 #include<netdb.h>
 #include<string.h>
+#include<commons/log.h>
 
-int crear_conexion(char *ip, int* puerto);
+t_log* logger;
+int crear_conexion(char *ip, int* puerto, t_log* logger);
 
 #endif /* SOCKETS_SOCKET_CLIENTE_H_ */

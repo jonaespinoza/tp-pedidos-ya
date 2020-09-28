@@ -1,0 +1,34 @@
+/*
+ * sindicato.c
+ *
+ *  Created on: 19 sep. 2020
+ *      Author: utnso
+ */
+
+#include"sindicato.h"
+#include"servidor_sindicato.h"
+
+
+
+int main(void){
+
+	t_log* logSindicato = leer_log();
+
+	t_config* configSindicato = config_create("sindicato.config");
+
+	int serv_sindicato = iniciar_servidor(configSindicato, logSindicato);
+
+	char *ip_server = config_get_string_value(configSindicato, "IP");
+	int puerto_server = config_get_int_value(configSindicato, "PUERTO_ESCUCHA");
+
+	sem_init(&sem1,0,1);
+
+	pthread_create(&h1,NULL,*recibir_cliente,serv_sindicato);
+	pthread_create(&h2,NULL,*crear_conexion,(ip_server,puerto_server));
+
+	pthread_join(h1,NULL);
+	pthread_join(h2,NULL);
+
+}
+
+

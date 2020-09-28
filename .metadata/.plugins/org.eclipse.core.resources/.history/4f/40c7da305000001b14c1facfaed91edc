@@ -1,0 +1,43 @@
+/*
+ * servidor_sindicato.c
+ *
+ *  Created on: 7 sep. 2020
+ *      Author: utnso
+ */
+
+#include "servidor_sindicato.h"
+
+
+int servidor_sindicato(void){
+
+	t_config* configSindicato = leer_config();
+	t_log* logSindicato = leer_log();
+
+	int sock_servSindicato = iniciar_servidor(configSindicato, logSindicato);
+
+	int sock_sindicato = recibir_conexion(sock_servSindicato);
+
+	log_info(logSindicato, "SERVIDOR: Recibimos conexión de: ");
+
+}
+
+int recibir_cliente(int socket_sindicato){
+
+	struct sockaddr_in dir_cliente;
+	int tam_direccion = sizeof(struct sockaddr_in);
+
+	int socket_cliente = accept(socket_sindicato, (void*) &dir_cliente, &tam_direccion);
+
+	return socket_cliente;
+
+}
+
+t_config* leer_config(void){
+	return config_create("sindicato.config");
+}
+
+t_log* leer_log(void){
+	return log_create("sindicato.log","sindicato.log",1,LOG_LEVEL_TRACE);
+}
+
+

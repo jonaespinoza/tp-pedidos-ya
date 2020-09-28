@@ -1,0 +1,2 @@
+server: servidor_sindicato.c
+	gcc servidor_sindicato.c -o Server -lcommons

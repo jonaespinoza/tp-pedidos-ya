@@ -1,4 +1,76 @@
-19:02:11 **** Clean-only build of configuration Debug for project cliente ****
-make clean 
-rm -rf  ./sockets/socket_cliente.o ./sockets/socket_servidor.o  ./cliente.o  ./sockets/socket_cliente.d ./sockets/socket_servidor.d  ./cliente.d  cliente
+21:11:54 **** Incremental Build of configuration Debug for project sindicato ****
+make all 
+Building file: ../sindicato.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"sindicato.d" -MT"sindicato.o" -o "sindicato.o" "../sindicato.c"
+In file included from ../sindicato.h:18:0,
+                 from ../sindicato.c:8:
+../sockets/socket_servidor.h:22:8: warning: built-in function ‘log’ declared as non-function
+ t_log* log;
+        ^
+../sindicato.c: In function ‘main’:
+../sindicato.c:13:26: warning: passing argument 3 of ‘pthread_create’ from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&h1,NULL,*servidor_sindicato,NULL);
+                          ^
+In file included from ../sindicato.h:19:0,
+                 from ../sindicato.c:8:
+/usr/include/pthread.h:233:12: note: expected ‘void * (*)(void *)’ but argument is of type ‘void (*)(void)’
+ extern int pthread_create (pthread_t *__restrict __newthread,
+            ^
+subdir.mk:21: recipe for target 'sindicato.o' failed
+../sindicato.c:25:22: error: ‘mutex’ undeclared (first use in this function)
+  pthread_mutex_lock(&mutex);
+                      ^
+../sindicato.c:25:22: note: each undeclared identifier is reported only once for each function it appears in
+../sindicato.c:27:42: warning: passing argument 2 of ‘crear_conexion’ makes pointer from integer without a cast [-Wint-conversion]
+  int conexion = crear_conexion(ip_server,puerto_server,logSindicato);
+                                          ^
+In file included from ../sindicato.h:17:0,
+                 from ../sindicato.c:8:
+../sockets/socket_cliente.h:21:5: note: expected ‘int *’ but argument is of type ‘int’
+ int crear_conexion(char *ip, int* puerto, t_log* logger);
+     ^
+../sindicato.c:27:6: warning: unused variable ‘conexion’ [-Wunused-variable]
+  int conexion = crear_conexion(ip_server,puerto_server,logSindicato);
+      ^
+make: *** [sindicato.o] Error 1
+21:12:05 **** Incremental Build of configuration Debug for project sindicato ****
+make all 
+Building file: ../sindicato.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"sindicato.d" -MT"sindicato.o" -o "sindicato.o" "../sindicato.c"
+In file included from ../sindicato.h:18:0,
+                 from ../sindicato.c:8:
+../sockets/socket_servidor.h:22:8: warning: built-in function ‘log’ declared as non-function
+ t_log* log;
+        ^
+../sindicato.c: In function ‘main’:
+../sindicato.c:13:26: warning: passing argument 3 of ‘pthread_create’ from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&h1,NULL,*servidor_sindicato,NULL);
+                          ^
+In file included from ../sindicato.h:19:0,
+                 from ../sindicato.c:8:
+/usr/include/pthread.h:233:12: note: expected ‘void * (*)(void *)’ but argument is of type ‘void (*)(void)’
+ extern int pthread_create (pthread_t *__restrict __newthread,
+            ^
+../sindicato.c:25:42: warning: passing argument 2 of ‘crear_conexion’ makes pointer from integer without a cast [-Wint-conversion]
+  int conexion = crear_conexion(ip_server,puerto_server,logSindicato);
+                                          ^
+In file included from ../sindicato.h:17:0,
+                 from ../sindicato.c:8:
+../sockets/socket_cliente.h:21:5: note: expected ‘int *’ but argument is of type ‘int’
+ int crear_conexion(char *ip, int* puerto, t_log* logger);
+     ^
+../sindicato.c:25:6: warning: unused variable ‘conexion’ [-Wunused-variable]
+  int conexion = crear_conexion(ip_server,puerto_server,logSindicato);
+      ^
+Finished building: ../sindicato.c
  
+Building target: sindicato
+Invoking: GCC C Linker
+gcc  -o "sindicato"  ./sockets/socket_cliente.o ./sockets/socket_servidor.o  ./servidor_sindicato.o ./sindicato.o   -lcommons -lpthread
+Finished building target: sindicato
+ 
+21:12:07 **** Incremental Build of configuration Debug for project sindicato ****
+make all 
+make: Nothing to be done for 'all'.
